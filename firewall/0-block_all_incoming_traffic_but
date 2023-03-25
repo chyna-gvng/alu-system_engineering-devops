@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# bash script that configure 'web-01' so that its firewall redirects,
-# 'port 8080/TCP' to 'port 80/TCP'
+# bash script that  installs the 'ufw' firewall and,
+# setup a few rules on 'web-01'
 
 apt-get install ufw
 sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
