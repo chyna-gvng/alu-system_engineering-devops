@@ -1,3 +1,3 @@
 ### Web Stack Debugging
-Readme file for *0x0D-web_stack_debugging_0* directory.  
+Readme file for *web_stack_debugging_0* directory.  
 Highlight: Docker
