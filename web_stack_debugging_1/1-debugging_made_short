@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # bash script that configures 'nginx' to run & listen to port 80
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+echo "daemon off;" >> /etc/nginx/nginx.conf
 service nginx start
-kill "$(pgrep 'nginx' | head -1)"
