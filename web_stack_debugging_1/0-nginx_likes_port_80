@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bash script that configures a server to the above requirements
+
+sudo sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-enabled/default
+sudo systemctl restart nginx
