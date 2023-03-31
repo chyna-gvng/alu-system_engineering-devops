@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # bash script that configures 'nginx' to run & listen to port 80
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-echo "daemon off;" >> /etc/nginx/nginx.conf
-nginx -g "pid /tmp/nginx.pid;"
+pkill -1 nginx
+service nginx restart
